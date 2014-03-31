@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0639D1E318E8B86F001F75AE /* libjre_emul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0639D1E218E8B86F001F75AE /* libjre_emul.a */; };
+		064E071218E90A4B00F5DF6B /* black-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070918E90A4B00F5DF6B /* black-score.png */; };
+		064E071318E90A4B00F5DF6B /* black-stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070A18E90A4B00F5DF6B /* black-stone.png */; };
+		064E071418E90A4B00F5DF6B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070B18E90A4B00F5DF6B /* Default-568h@2x.png */; };
+		064E071518E90A4B00F5DF6B /* empty-square.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070C18E90A4B00F5DF6B /* empty-square.png */; };
+		064E071618E90A4B00F5DF6B /* reversi.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070D18E90A4B00F5DF6B /* reversi.png */; };
+		064E071718E90A4B00F5DF6B /* reversi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070E18E90A4B00F5DF6B /* reversi@2x.png */; };
+		064E071818E90A4B00F5DF6B /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E070F18E90A4B00F5DF6B /* tile.png */; };
+		064E071918E90A4B00F5DF6B /* white-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E071018E90A4B00F5DF6B /* white-score.png */; };
+		064E071A18E90A4B00F5DF6B /* white-stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E071118E90A4B00F5DF6B /* white-stone.png */; };
+		064E073818E90BD400F5DF6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 064E071C18E90BD400F5DF6B /* InfoPlist.strings */; };
+		064E073918E90BD400F5DF6B /* J2RViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */; };
+		064E073A18E90BD400F5DF6B /* J2RViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */; };
+		064E073B18E90BD400F5DF6B /* J2RAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072318E90BD400F5DF6B /* J2RAppDelegate.m */; };
+		064E073C18E90BD400F5DF6B /* J2RBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072518E90BD400F5DF6B /* J2RBoard.m */; };
+		064E073E18E90BD400F5DF6B /* J2RSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072918E90BD400F5DF6B /* J2RSquare.m */; };
+		064E073F18E90BD400F5DF6B /* J2RViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072B18E90BD400F5DF6B /* J2RViewController.m */; };
+		064E074018E90BD400F5DF6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072C18E90BD400F5DF6B /* main.m */; };
+		064E074118E90BD400F5DF6B /* CommandInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E072F18E90BD400F5DF6B /* CommandInterface.java */; };
+		064E074218E90BD400F5DF6B /* CommandInterfaceListener.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073018E90BD400F5DF6B /* CommandInterfaceListener.java */; };
+		064E074318E90BD400F5DF6B /* Engine.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073118E90BD400F5DF6B /* Engine.java */; };
+		064E074418E90BD400F5DF6B /* Game.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073218E90BD400F5DF6B /* Game.java */; };
+		064E074518E90BD400F5DF6B /* Move.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073318E90BD400F5DF6B /* Move.java */; };
+		064E074618E90BD400F5DF6B /* Position.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073418E90BD400F5DF6B /* Position.java */; };
+		064E074718E90BD400F5DF6B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 064E073518E90BD400F5DF6B /* README */; };
+		064E074818E90BD400F5DF6B /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073618E90BD400F5DF6B /* Score.java */; };
+		064E074918E90BD400F5DF6B /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073718E90BD400F5DF6B /* SuperEngine.java */; };
+		0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650A42618DF6AB800C743D6 /* Security.framework */; };
+		0650A42918DF6AD900C743D6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650A42818DF6AD900C743D6 /* libz.dylib */; };
+		0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A30F163DE1C800407C3A /* UIKit.framework */; };
+		0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A311163DE1C800407C3A /* Foundation.framework */; };
+		0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A313163DE1C800407C3A /* CoreGraphics.framework */; };
+		06A39B4D16F3969000C827E5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A39B4C16F3969000C827E5 /* SenTestingKit.framework */; };
+		06A39B5916F3969000C827E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A39B5716F3969000C827E5 /* InfoPlist.strings */; };
+		06A39B5C16F3969000C827E5 /* J2Reversi_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		06CF2E43166A8B2D00256789 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.java;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m",
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h",
+			);
+			script = "if [ ! -f ${J2OBJC_HOME}/j2objc ]; then echo \"J2OBJC_HOME not defined in Settings.xcconfig\"; exit 1; fi;\n${J2OBJC_HOME}/j2objc -d ${DERIVED_FILES_DIR} -sourcepath ${PROJECT_DIR}/Classes --no-package-directories --prefix Othello.Engine=OE -g ${INPUT_FILE_PATH};";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		0639D1E218E8B86F001F75AE /* libjre_emul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjre_emul.a; path = "../../j2objc-p1/google3/third_party/java_src/j2objc/dist/lib/libjre_emul.a"; sourceTree = "<group>"; };
+		064E070718E90A3600F5DF6B /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Config/Settings.xcconfig; sourceTree = "<group>"; };
+		064E070918E90A4B00F5DF6B /* black-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-score.png"; path = "graphics/black-score.png"; sourceTree = "<group>"; };
+		064E070A18E90A4B00F5DF6B /* black-stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-stone.png"; path = "graphics/black-stone.png"; sourceTree = "<group>"; };
+		064E070B18E90A4B00F5DF6B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "graphics/Default-568h@2x.png"; sourceTree = "<group>"; };
+		064E070C18E90A4B00F5DF6B /* empty-square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "empty-square.png"; path = "graphics/empty-square.png"; sourceTree = "<group>"; };
+		064E070D18E90A4B00F5DF6B /* reversi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reversi.png; path = graphics/reversi.png; sourceTree = "<group>"; };
+		064E070E18E90A4B00F5DF6B /* reversi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reversi@2x.png"; path = "graphics/reversi@2x.png"; sourceTree = "<group>"; };
+		064E070F18E90A4B00F5DF6B /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile.png; path = graphics/tile.png; sourceTree = "<group>"; };
+		064E071018E90A4B00F5DF6B /* white-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-score.png"; path = "graphics/white-score.png"; sourceTree = "<group>"; };
+		064E071118E90A4B00F5DF6B /* white-stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-stone.png"; path = "graphics/white-stone.png"; sourceTree = "<group>"; };
+		064E071D18E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		064E071F18E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = J2RViewController_iPad.xib; sourceTree = "<group>"; };
+		064E072118E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = J2RViewController_iPhone.xib; sourceTree = "<group>"; };
+		064E072218E90BD400F5DF6B /* J2RAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RAppDelegate.h; path = Classes/J2RAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		064E072318E90BD400F5DF6B /* J2RAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2RAppDelegate.m; path = Classes/J2RAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		064E072418E90BD400F5DF6B /* J2RBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RBoard.h; path = Classes/J2RBoard.h; sourceTree = SOURCE_ROOT; };
+		064E072518E90BD400F5DF6B /* J2RBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2RBoard.m; path = Classes/J2RBoard.m; sourceTree = SOURCE_ROOT; };
+		064E072818E90BD400F5DF6B /* J2RSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RSquare.h; path = Classes/J2RSquare.h; sourceTree = SOURCE_ROOT; };
+		064E072918E90BD400F5DF6B /* J2RSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2RSquare.m; path = Classes/J2RSquare.m; sourceTree = SOURCE_ROOT; };
+		064E072A18E90BD400F5DF6B /* J2RViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RViewController.h; path = Classes/J2RViewController.h; sourceTree = SOURCE_ROOT; };
+		064E072B18E90BD400F5DF6B /* J2RViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2RViewController.m; path = Classes/J2RViewController.m; sourceTree = SOURCE_ROOT; };
+		064E072C18E90BD400F5DF6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = SOURCE_ROOT; };
+		064E072F18E90BD400F5DF6B /* CommandInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CommandInterface.java; sourceTree = "<group>"; };
+		064E073018E90BD400F5DF6B /* CommandInterfaceListener.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CommandInterfaceListener.java; sourceTree = "<group>"; };
+		064E073118E90BD400F5DF6B /* Engine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Engine.java; sourceTree = "<group>"; };
+		064E073218E90BD400F5DF6B /* Game.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Game.java; sourceTree = "<group>"; };
+		064E073318E90BD400F5DF6B /* Move.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Move.java; sourceTree = "<group>"; };
+		064E073418E90BD400F5DF6B /* Position.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Position.java; sourceTree = "<group>"; };
+		064E073518E90BD400F5DF6B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		064E073618E90BD400F5DF6B /* Score.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Score.java; sourceTree = "<group>"; };
+		064E073718E90BD400F5DF6B /* SuperEngine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SuperEngine.java; sourceTree = "<group>"; };
+		064E078E18E912B400F5DF6B /* J2Reversi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J2Reversi-Info.plist"; sourceTree = SOURCE_ROOT; };
+		064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		0650A42618DF6AB800C743D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0650A42818DF6AD900C743D6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0683A30B163DE1C800407C3A /* J2Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0683A30F163DE1C800407C3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0683A311163DE1C800407C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0683A313163DE1C800407C3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "J2Reversi Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A39B4C16F3969000C827E5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		06A39B5616F3969000C827E5 /* J2Reversi Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J2Reversi Tests-Info.plist"; sourceTree = "<group>"; };
+		06A39B5816F3969000C827E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06A39B5A16F3969000C827E5 /* J2Reversi_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = J2Reversi_Tests.h; sourceTree = "<group>"; };
+		06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = J2Reversi_Tests.m; sourceTree = "<group>"; };
+		06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi Tests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0683A308163DE1C800407C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0639D1E318E8B86F001F75AE /* libjre_emul.a in Frameworks */,
+				0650A42918DF6AD900C743D6 /* libz.dylib in Frameworks */,
+				0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */,
+				0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */,
+				0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */,
+				0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A39B4716F3969000C827E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A39B4D16F3969000C827E5 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064E071B18E90BD400F5DF6B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				064E071C18E90BD400F5DF6B /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = Classes/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		064E072D18E90BD400F5DF6B /* Othello */ = {
+			isa = PBXGroup;
+			children = (
+				064E072E18E90BD400F5DF6B /* Engine */,
+			);
+			name = Othello;
+			path = Classes/Othello;
+			sourceTree = SOURCE_ROOT;
+		};
+		064E072E18E90BD400F5DF6B /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				064E072F18E90BD400F5DF6B /* CommandInterface.java */,
+				064E073018E90BD400F5DF6B /* CommandInterfaceListener.java */,
+				064E073118E90BD400F5DF6B /* Engine.java */,
+				064E073218E90BD400F5DF6B /* Game.java */,
+				064E073318E90BD400F5DF6B /* Move.java */,
+				064E073418E90BD400F5DF6B /* Position.java */,
+				064E073518E90BD400F5DF6B /* README */,
+				064E073618E90BD400F5DF6B /* Score.java */,
+				064E073718E90BD400F5DF6B /* SuperEngine.java */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		0679B6DD1801248900E81344 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				064E070918E90A4B00F5DF6B /* black-score.png */,
+				064E070A18E90A4B00F5DF6B /* black-stone.png */,
+				064E070B18E90A4B00F5DF6B /* Default-568h@2x.png */,
+				064E070C18E90A4B00F5DF6B /* empty-square.png */,
+				064E070D18E90A4B00F5DF6B /* reversi.png */,
+				064E070E18E90A4B00F5DF6B /* reversi@2x.png */,
+				064E070F18E90A4B00F5DF6B /* tile.png */,
+				064E071018E90A4B00F5DF6B /* white-score.png */,
+				064E071118E90A4B00F5DF6B /* white-stone.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		0683A300163DE1C800407C3A = {
+			isa = PBXGroup;
+			children = (
+				064E070718E90A3600F5DF6B /* Settings.xcconfig */,
+				0683A315163DE1C800407C3A /* Classes */,
+				0679B6DD1801248900E81344 /* Graphics */,
+				0683A30E163DE1C800407C3A /* Frameworks */,
+				06A39B5416F3969000C827E5 /* J2Reversi Tests */,
+				0683A30C163DE1C800407C3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0683A30C163DE1C800407C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0683A30B163DE1C800407C3A /* J2Reversi.app */,
+				06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0683A30E163DE1C800407C3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0639D1E218E8B86F001F75AE /* libjre_emul.a */,
+				0650A42818DF6AD900C743D6 /* libz.dylib */,
+				0650A42618DF6AB800C743D6 /* Security.framework */,
+				0683A30F163DE1C800407C3A /* UIKit.framework */,
+				0683A311163DE1C800407C3A /* Foundation.framework */,
+				0683A313163DE1C800407C3A /* CoreGraphics.framework */,
+				06A39B4C16F3969000C827E5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0683A315163DE1C800407C3A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				064E072218E90BD400F5DF6B /* J2RAppDelegate.h */,
+				064E072318E90BD400F5DF6B /* J2RAppDelegate.m */,
+				064E072418E90BD400F5DF6B /* J2RBoard.h */,
+				064E072518E90BD400F5DF6B /* J2RBoard.m */,
+				064E072818E90BD400F5DF6B /* J2RSquare.h */,
+				064E072918E90BD400F5DF6B /* J2RSquare.m */,
+				064E072A18E90BD400F5DF6B /* J2RViewController.h */,
+				064E072B18E90BD400F5DF6B /* J2RViewController.m */,
+				064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */,
+				064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */,
+				064E072D18E90BD400F5DF6B /* Othello */,
+				0683A316163DE1C800407C3A /* Supporting Files */,
+			);
+			name = Classes;
+			path = J2Reversi;
+			sourceTree = "<group>";
+		};
+		0683A316163DE1C800407C3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				064E078E18E912B400F5DF6B /* J2Reversi-Info.plist */,
+				064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */,
+				064E071B18E90BD400F5DF6B /* en.lproj */,
+				064E072C18E90BD400F5DF6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06A39B5416F3969000C827E5 /* J2Reversi Tests */ = {
+			isa = PBXGroup;
+			children = (
+				06A39B5A16F3969000C827E5 /* J2Reversi_Tests.h */,
+				06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */,
+				06A39B5516F3969000C827E5 /* Supporting Files */,
+			);
+			path = "J2Reversi Tests";
+			sourceTree = "<group>";
+		};
+		06A39B5516F3969000C827E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A39B5616F3969000C827E5 /* J2Reversi Tests-Info.plist */,
+				06A39B5716F3969000C827E5 /* InfoPlist.strings */,
+				06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0683A30A163DE1C800407C3A /* J2Reversi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0683A32C163DE1C800407C3A /* Build configuration list for PBXNativeTarget "J2Reversi" */;
+			buildPhases = (
+				0683A307163DE1C800407C3A /* Sources */,
+				0683A308163DE1C800407C3A /* Frameworks */,
+				0683A309163DE1C800407C3A /* Resources */,
+			);
+			buildRules = (
+				06CF2E43166A8B2D00256789 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = J2Reversi;
+			productName = J2Reversi;
+			productReference = 0683A30B163DE1C800407C3A /* J2Reversi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06A39B4A16F3969000C827E5 /* J2Reversi Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A39B5E16F3969000C827E5 /* Build configuration list for PBXNativeTarget "J2Reversi Tests" */;
+			buildPhases = (
+				06A39B4616F3969000C827E5 /* Sources */,
+				06A39B4716F3969000C827E5 /* Frameworks */,
+				06A39B4816F3969000C827E5 /* Resources */,
+				06A39B4916F3969000C827E5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "J2Reversi Tests";
+			productName = "J2Reversi Tests";
+			productReference = 06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0683A302163DE1C800407C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = J2R;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tom Ball";
+			};
+			buildConfigurationList = 0683A305163DE1C800407C3A /* Build configuration list for PBXProject "J2Reversi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0683A300163DE1C800407C3A;
+			productRefGroup = 0683A30C163DE1C800407C3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0683A30A163DE1C800407C3A /* J2Reversi */,
+				06A39B4A16F3969000C827E5 /* J2Reversi Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0683A309163DE1C800407C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E071518E90A4B00F5DF6B /* empty-square.png in Resources */,
+				064E071618E90A4B00F5DF6B /* reversi.png in Resources */,
+				064E071A18E90A4B00F5DF6B /* white-stone.png in Resources */,
+				064E073818E90BD400F5DF6B /* InfoPlist.strings in Resources */,
+				064E071818E90A4B00F5DF6B /* tile.png in Resources */,
+				064E071918E90A4B00F5DF6B /* white-score.png in Resources */,
+				064E074718E90BD400F5DF6B /* README in Resources */,
+				064E073A18E90BD400F5DF6B /* J2RViewController_iPhone.xib in Resources */,
+				064E071318E90A4B00F5DF6B /* black-stone.png in Resources */,
+				064E073918E90BD400F5DF6B /* J2RViewController_iPad.xib in Resources */,
+				064E071718E90A4B00F5DF6B /* reversi@2x.png in Resources */,
+				064E071218E90A4B00F5DF6B /* black-score.png in Resources */,
+				064E071418E90A4B00F5DF6B /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A39B4816F3969000C827E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A39B5916F3969000C827E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06A39B4916F3969000C827E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0683A307163DE1C800407C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E073C18E90BD400F5DF6B /* J2RBoard.m in Sources */,
+				064E074318E90BD400F5DF6B /* Engine.java in Sources */,
+				064E074818E90BD400F5DF6B /* Score.java in Sources */,
+				064E074518E90BD400F5DF6B /* Move.java in Sources */,
+				064E073F18E90BD400F5DF6B /* J2RViewController.m in Sources */,
+				064E073E18E90BD400F5DF6B /* J2RSquare.m in Sources */,
+				064E074118E90BD400F5DF6B /* CommandInterface.java in Sources */,
+				064E073B18E90BD400F5DF6B /* J2RAppDelegate.m in Sources */,
+				064E074618E90BD400F5DF6B /* Position.java in Sources */,
+				064E074918E90BD400F5DF6B /* SuperEngine.java in Sources */,
+				064E074018E90BD400F5DF6B /* main.m in Sources */,
+				064E074218E90BD400F5DF6B /* CommandInterfaceListener.java in Sources */,
+				064E074418E90BD400F5DF6B /* Game.java in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A39B4616F3969000C827E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A39B5C16F3969000C827E5 /* J2Reversi_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		064E071C18E90BD400F5DF6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064E071D18E90BD400F5DF6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064E071F18E90BD400F5DF6B /* en */,
+			);
+			name = J2RViewController_iPad.xib;
+			path = ../Classes/en.lproj;
+			sourceTree = "<group>";
+		};
+		064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064E072118E90BD400F5DF6B /* en */,
+			);
+			name = J2RViewController_iPhone.xib;
+			path = ../Classes/en.lproj;
+			sourceTree = "<group>";
+		};
+		06A39B5716F3969000C827E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A39B5816F3969000C827E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0683A32A163DE1C800407C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064E070718E90A3600F5DF6B /* Settings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0683A32B163DE1C800407C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064E070718E90A3600F5DF6B /* Settings.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0683A32D163DE1C800407C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR}";
+				INFOPLIST_FILE = "J2Reversi-Info.plist";
+				INSTALL_OWNER = "";
+				LIBRARY_SEARCH_PATHS = "/Users/tball/j2objc-p1/google3/third_party/java_src/j2objc/dist/lib";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0683A32E163DE1C800407C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR}";
+				INFOPLIST_FILE = "J2Reversi-Info.plist";
+				INSTALL_OWNER = "";
+				LIBRARY_SEARCH_PATHS = "/Users/tball/j2objc-p1/google3/third_party/java_src/j2objc/dist/lib";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		06A39B5F16F3969000C827E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "J2Reversi Tests/J2Reversi Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "J2Reversi Tests/J2Reversi Tests-Info.plist";
+				INSTALL_OWNER = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		06A39B6016F3969000C827E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "J2Reversi Tests/J2Reversi Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "J2Reversi Tests/J2Reversi Tests-Info.plist";
+				INSTALL_OWNER = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0683A305163DE1C800407C3A /* Build configuration list for PBXProject "J2Reversi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0683A32A163DE1C800407C3A /* Debug */,
+				0683A32B163DE1C800407C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0683A32C163DE1C800407C3A /* Build configuration list for PBXNativeTarget "J2Reversi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0683A32D163DE1C800407C3A /* Debug */,
+				0683A32E163DE1C800407C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A39B5E16F3969000C827E5 /* Build configuration list for PBXNativeTarget "J2Reversi Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A39B5F16F3969000C827E5 /* Debug */,
+				06A39B6016F3969000C827E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0683A302163DE1C800407C3A /* Project object */;
+}

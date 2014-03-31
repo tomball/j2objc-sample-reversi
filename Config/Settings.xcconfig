@@ -1,0 +1,12 @@
+//
+//  Settings.xcconfig
+//  J2Reversi
+//
+
+// Update to point to location of j2objc distribution directory.
+// If building j2objc from source, that would be j2objc/dist.
+J2OBJC_HOME=${HOME}/j2objc
+
+USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include";
+LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+OTHER_LDFLAGS = "-l" "jre_emul";
