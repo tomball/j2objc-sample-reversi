@@ -53,7 +53,7 @@
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m",
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h",
 			);
-			script = "if [ ! -f ${J2OBJC_HOME}/j2objc ]; then echo \"J2OBJC_HOME not defined in Settings.xcconfig\"; exit 1; fi;\n${J2OBJC_HOME}/j2objc -d ${DERIVED_FILES_DIR} -sourcepath ${PROJECT_DIR}/Classes --no-package-directories --prefix Othello.Engine=OE -g ${INPUT_FILE_PATH};";
+			script = "#echo \"${J2OBJC_HOME}/j2objc\"\nif [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME not defined in Settings.xcconfig\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/Classes\" --no-package-directories --prefix Othello.Engine=OE -g ${INPUT_FILE_PATH};";
 		};
 /* End PBXBuildRule section */
 
