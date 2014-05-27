@@ -529,7 +529,6 @@
 				HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR}";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
-				LIBRARY_SEARCH_PATHS = "/Users/tball/j2objc-p1/google3/third_party/java_src/j2objc/dist/lib";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -547,7 +546,6 @@
 				HEADER_SEARCH_PATHS = "${DERIVED_FILES_DIR}";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
-				LIBRARY_SEARCH_PATHS = "/Users/tball/j2objc-p1/google3/third_party/java_src/j2objc/dist/lib";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
