@@ -18,8 +18,6 @@
 		064E071918E90A4B00F5DF6B /* white-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E071018E90A4B00F5DF6B /* white-score.png */; };
 		064E071A18E90A4B00F5DF6B /* white-stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 064E071118E90A4B00F5DF6B /* white-stone.png */; };
 		064E073818E90BD400F5DF6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 064E071C18E90BD400F5DF6B /* InfoPlist.strings */; };
-		064E073918E90BD400F5DF6B /* J2RViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */; };
-		064E073A18E90BD400F5DF6B /* J2RViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */; };
 		064E073B18E90BD400F5DF6B /* J2RAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072318E90BD400F5DF6B /* J2RAppDelegate.m */; };
 		064E073C18E90BD400F5DF6B /* J2RBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072518E90BD400F5DF6B /* J2RBoard.m */; };
 		064E073E18E90BD400F5DF6B /* J2RSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E072918E90BD400F5DF6B /* J2RSquare.m */; };
@@ -42,6 +40,8 @@
 		06A39B4D16F3969000C827E5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A39B4C16F3969000C827E5 /* SenTestingKit.framework */; };
 		06A39B5916F3969000C827E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A39B5716F3969000C827E5 /* InfoPlist.strings */; };
 		06A39B5C16F3969000C827E5 /* J2Reversi_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */; };
+		3D9F90491934DA2F00738699 /* J2RViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */; };
+		3D9F904A1934DA2F00738699 /* J2RViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -71,8 +71,6 @@
 		064E071018E90A4B00F5DF6B /* white-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-score.png"; path = "graphics/white-score.png"; sourceTree = "<group>"; };
 		064E071118E90A4B00F5DF6B /* white-stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-stone.png"; path = "graphics/white-stone.png"; sourceTree = "<group>"; };
 		064E071D18E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		064E071F18E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = J2RViewController_iPad.xib; sourceTree = "<group>"; };
-		064E072118E90BD400F5DF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = J2RViewController_iPhone.xib; sourceTree = "<group>"; };
 		064E072218E90BD400F5DF6B /* J2RAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RAppDelegate.h; path = Classes/J2RAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		064E072318E90BD400F5DF6B /* J2RAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2RAppDelegate.m; path = Classes/J2RAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		064E072418E90BD400F5DF6B /* J2RBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2RBoard.h; path = Classes/J2RBoard.h; sourceTree = SOURCE_ROOT; };
@@ -106,6 +104,8 @@
 		06A39B5A16F3969000C827E5 /* J2Reversi_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = J2Reversi_Tests.h; sourceTree = "<group>"; };
 		06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = J2Reversi_Tests.m; sourceTree = "<group>"; };
 		06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi Tests-Prefix.pch"; sourceTree = "<group>"; };
+		3D9F90461934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPad.xib; sourceTree = SOURCE_ROOT; };
+		3D9F90481934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,9 +229,8 @@
 				064E072918E90BD400F5DF6B /* J2RSquare.m */,
 				064E072A18E90BD400F5DF6B /* J2RViewController.h */,
 				064E072B18E90BD400F5DF6B /* J2RViewController.m */,
-				064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */,
-				064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */,
 				064E072D18E90BD400F5DF6B /* Othello */,
+				3D441D721934BE230063E6FD /* Resources */,
 				0683A316163DE1C800407C3A /* Supporting Files */,
 			);
 			name = Classes;
@@ -267,6 +266,16 @@
 				06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D441D721934BE230063E6FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */,
+				3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */,
+			);
+			name = Resources;
+			path = Classes/en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,15 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				064E071518E90A4B00F5DF6B /* empty-square.png in Resources */,
+				3D9F90491934DA2F00738699 /* J2RViewController_iPad.xib in Resources */,
 				064E071618E90A4B00F5DF6B /* reversi.png in Resources */,
+				3D9F904A1934DA2F00738699 /* J2RViewController_iPhone.xib in Resources */,
 				064E071A18E90A4B00F5DF6B /* white-stone.png in Resources */,
 				064E073818E90BD400F5DF6B /* InfoPlist.strings in Resources */,
 				064E071818E90A4B00F5DF6B /* tile.png in Resources */,
 				064E071918E90A4B00F5DF6B /* white-score.png in Resources */,
 				064E074718E90BD400F5DF6B /* README in Resources */,
-				064E073A18E90BD400F5DF6B /* J2RViewController_iPhone.xib in Resources */,
 				064E071318E90A4B00F5DF6B /* black-stone.png in Resources */,
-				064E073918E90BD400F5DF6B /* J2RViewController_iPad.xib in Resources */,
 				064E071718E90A4B00F5DF6B /* reversi@2x.png in Resources */,
 				064E071218E90A4B00F5DF6B /* black-score.png in Resources */,
 				064E071418E90A4B00F5DF6B /* Default-568h@2x.png in Resources */,
@@ -423,30 +432,28 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		064E071E18E90BD400F5DF6B /* J2RViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				064E071F18E90BD400F5DF6B /* en */,
-			);
-			name = J2RViewController_iPad.xib;
-			path = ../Classes/en.lproj;
-			sourceTree = "<group>";
-		};
-		064E072018E90BD400F5DF6B /* J2RViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				064E072118E90BD400F5DF6B /* en */,
-			);
-			name = J2RViewController_iPhone.xib;
-			path = ../Classes/en.lproj;
-			sourceTree = "<group>";
-		};
 		06A39B5716F3969000C827E5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				06A39B5816F3969000C827E5 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9F90461934DA2F00738699 /* en */,
+			);
+			name = J2RViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9F90481934DA2F00738699 /* en */,
+			);
+			name = J2RViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
