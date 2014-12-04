@@ -52,7 +52,7 @@
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m",
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h",
 			);
-			script = "#echo \"${J2OBJC_HOME}/j2objc\"\nif [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/Classes\" --no-package-directories --prefix Othello.Engine=OE -g ${INPUT_FILE_PATH};";
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig, currently set to '${J2OBJC_HOME}'\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/Classes\" --no-package-directories --prefix Othello.Engine=OE -g ${INPUT_FILE_PATH};";
 		};
 /* End PBXBuildRule section */
 
@@ -307,7 +307,7 @@
 			name = "J2Reversi Tests";
 			productName = "J2Reversi Tests";
 			productReference = 06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
