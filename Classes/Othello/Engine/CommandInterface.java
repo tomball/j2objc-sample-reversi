@@ -5,7 +5,9 @@
 
 package Othello.Engine;
 
+import java.util.logging.Logger;
 
+    
 /**
  * Implements an interface to Othello.Engine that is directed to
  * what a user interface might want to do.
@@ -13,8 +15,11 @@ package Othello.Engine;
 
 public class CommandInterface implements Runnable
 {
+  private static final Logger log = Logger.getLogger(CommandInterface.class.getName());
+
   public CommandInterface()
   {
+    log.info("log.info - CommandInterface");
   }
   
 
