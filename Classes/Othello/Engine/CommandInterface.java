@@ -19,7 +19,7 @@ public class CommandInterface implements Runnable
 
   public CommandInterface()
   {
-    log.info("log.info - CommandInterface");
+    log.info("CommandInterface");
   }
   
 
