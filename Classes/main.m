@@ -22,7 +22,7 @@
 int main(int argc, char *argv[])
 {
   @autoreleasepool {
-      NSLog(@"NSLog - main.m");
+      NSLog(@"main.m");
       return UIApplicationMain(argc, argv, nil, NSStringFromClass([J2RAppDelegate class]));
   }
 }
