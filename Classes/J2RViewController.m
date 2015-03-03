@@ -55,7 +55,4 @@
   return NO;
 }
 
-- (void)dealloc {
-  [super dealloc];
-}
 @end
