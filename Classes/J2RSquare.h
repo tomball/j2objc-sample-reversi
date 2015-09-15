@@ -20,8 +20,8 @@
 #import "CommandInterfaceListener.h"
 
 @interface J2RSquare : UIView {
-  NSInteger _column;
-  NSInteger _row;
+  jint _column;
+  jint _row;
   UIImageView* _imageView;
   UIImage* _blackImage;
   UIImage* _whiteImage;
@@ -31,8 +31,8 @@
 }
 
 - (id) initWithFrame:(CGRect)frame
-              column:(NSInteger)column
-                 row:(NSInteger)row
+              column:(jint)column
+                 row:(jint)row
                model:(OECommandInterface *)model
       resultListener:(id<OECommandInterfaceListener>)listener;
 

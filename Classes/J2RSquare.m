@@ -22,8 +22,8 @@
 @implementation J2RSquare
 
 - (id)initWithFrame:(CGRect)frame
-             column:(NSInteger)column
-                row:(NSInteger)row
+             column:(jint)column
+                row:(jint)row
               model:(OECommandInterface *)model
      resultListener:(id<OECommandInterfaceListener>)listener {
   if (self = [super initWithFrame:frame]) {
@@ -54,8 +54,8 @@
 
 - (void)update {
   // Model row and column numbers start with 1, not zero.
-  NSInteger column = _column + 1;
-  NSInteger row = _row + 1;
+  jint column = _column + 1;
+  jint row = _row + 1;
 
   // Returns 1 for white, 2 for black, and zero for empty.
   int state = [_model GetSquareWithInt:column withInt:row];
@@ -79,8 +79,8 @@
 
 - (void)cellTapped:(UITapGestureRecognizer*)recognizer {
   // Model row and column numbers start with 1, not zero.
-  NSInteger column = _column + 1;
-  NSInteger row = _row + 1;
+  jint column = _column + 1;
+  jint row = _row + 1;
 
   if ([_model MakeMoveIsPossibleWithInt:column withInt:row]) {
     [_model MakeMoveWithInt:column withInt:row];

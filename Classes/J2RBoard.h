@@ -32,6 +32,6 @@
 
 - (void)update;
 
-- (void)updateSquare:(NSInteger)column withRow:(NSInteger)row;
+- (void)updateSquare:(jint)column withRow:(jint)row;
 
 @end

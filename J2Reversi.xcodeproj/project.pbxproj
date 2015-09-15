@@ -35,9 +35,6 @@
 		0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A30F163DE1C800407C3A /* UIKit.framework */; };
 		0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A311163DE1C800407C3A /* Foundation.framework */; };
 		0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A313163DE1C800407C3A /* CoreGraphics.framework */; };
-		06A39B4D16F3969000C827E5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A39B4C16F3969000C827E5 /* SenTestingKit.framework */; };
-		06A39B5916F3969000C827E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A39B5716F3969000C827E5 /* InfoPlist.strings */; };
-		06A39B5C16F3969000C827E5 /* J2Reversi_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */; };
 		3D9F90491934DA2F00738699 /* J2RViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */; };
 		3D9F904A1934DA2F00738699 /* J2RViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
@@ -93,13 +90,6 @@
 		0683A30F163DE1C800407C3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0683A311163DE1C800407C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0683A313163DE1C800407C3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "J2Reversi Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06A39B4C16F3969000C827E5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		06A39B5616F3969000C827E5 /* J2Reversi Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J2Reversi Tests-Info.plist"; sourceTree = "<group>"; };
-		06A39B5816F3969000C827E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		06A39B5A16F3969000C827E5 /* J2Reversi_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = J2Reversi_Tests.h; sourceTree = "<group>"; };
-		06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = J2Reversi_Tests.m; sourceTree = "<group>"; };
-		06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi Tests-Prefix.pch"; sourceTree = "<group>"; };
 		3D9F90461934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPad.xib; sourceTree = SOURCE_ROOT; };
 		3D9F90481934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -113,14 +103,6 @@
 				0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */,
 				0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */,
 				0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06A39B4716F3969000C827E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06A39B4D16F3969000C827E5 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +166,6 @@
 				0683A315163DE1C800407C3A /* Classes */,
 				0679B6DD1801248900E81344 /* Graphics */,
 				0683A30E163DE1C800407C3A /* Frameworks */,
-				06A39B5416F3969000C827E5 /* J2Reversi Tests */,
 				0683A30C163DE1C800407C3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -193,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				0683A30B163DE1C800407C3A /* J2Reversi.app */,
-				06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,7 +185,6 @@
 				0683A30F163DE1C800407C3A /* UIKit.framework */,
 				0683A311163DE1C800407C3A /* Foundation.framework */,
 				0683A313163DE1C800407C3A /* CoreGraphics.framework */,
-				06A39B4C16F3969000C827E5 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,26 +215,6 @@
 				064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */,
 				064E071B18E90BD400F5DF6B /* en.lproj */,
 				064E072C18E90BD400F5DF6B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		06A39B5416F3969000C827E5 /* J2Reversi Tests */ = {
-			isa = PBXGroup;
-			children = (
-				06A39B5A16F3969000C827E5 /* J2Reversi_Tests.h */,
-				06A39B5B16F3969000C827E5 /* J2Reversi_Tests.m */,
-				06A39B5516F3969000C827E5 /* Supporting Files */,
-			);
-			path = "J2Reversi Tests";
-			sourceTree = "<group>";
-		};
-		06A39B5516F3969000C827E5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				06A39B5616F3969000C827E5 /* J2Reversi Tests-Info.plist */,
-				06A39B5716F3969000C827E5 /* InfoPlist.strings */,
-				06A39B5D16F3969000C827E5 /* J2Reversi Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -291,24 +250,6 @@
 			productReference = 0683A30B163DE1C800407C3A /* J2Reversi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		06A39B4A16F3969000C827E5 /* J2Reversi Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06A39B5E16F3969000C827E5 /* Build configuration list for PBXNativeTarget "J2Reversi Tests" */;
-			buildPhases = (
-				06A39B4616F3969000C827E5 /* Sources */,
-				06A39B4716F3969000C827E5 /* Frameworks */,
-				06A39B4816F3969000C827E5 /* Resources */,
-				06A39B4916F3969000C827E5 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "J2Reversi Tests";
-			productName = "J2Reversi Tests";
-			productReference = 06A39B4B16F3969000C827E5 /* J2Reversi Tests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,8 +257,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = J2R;
-				LastUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tom Ball";
+				TargetAttributes = {
+					0683A30A163DE1C800407C3A = {
+						DevelopmentTeam = EQHXZ8M8AV;
+					};
+				};
 			};
 			buildConfigurationList = 0683A305163DE1C800407C3A /* Build configuration list for PBXProject "J2Reversi" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -332,7 +279,6 @@
 			projectRoot = "";
 			targets = (
 				0683A30A163DE1C800407C3A /* J2Reversi */,
-				06A39B4A16F3969000C827E5 /* J2Reversi Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,31 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06A39B4816F3969000C827E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06A39B5916F3969000C827E5 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		06A39B4916F3969000C827E5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0683A307163DE1C800407C3A /* Sources */ = {
@@ -405,14 +327,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06A39B4616F3969000C827E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06A39B5C16F3969000C827E5 /* J2Reversi_Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -420,14 +334,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				064E071D18E90BD400F5DF6B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		06A39B5716F3969000C827E5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06A39B5816F3969000C827E5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -461,11 +367,15 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -496,10 +406,13 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -520,11 +433,15 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.j2objc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -534,56 +451,16 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.j2objc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		06A39B5F16F3969000C827E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALTERNATE_OWNER = "";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "J2Reversi Tests/J2Reversi Tests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "J2Reversi Tests/J2Reversi Tests-Info.plist";
-				INSTALL_OWNER = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		06A39B6016F3969000C827E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALTERNATE_OWNER = "";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "J2Reversi Tests/J2Reversi Tests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "J2Reversi Tests/J2Reversi Tests-Info.plist";
-				INSTALL_OWNER = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -604,15 +481,6 @@
 			buildConfigurations = (
 				0683A32D163DE1C800407C3A /* Debug */,
 				0683A32E163DE1C800407C3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		06A39B5E16F3969000C827E5 /* Build configuration list for PBXNativeTarget "J2Reversi Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06A39B5F16F3969000C827E5 /* Debug */,
-				06A39B6016F3969000C827E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

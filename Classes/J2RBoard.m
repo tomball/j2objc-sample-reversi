@@ -62,7 +62,7 @@
   }
 }
 
-- (void)updateSquare:(NSInteger)column withRow:(NSInteger)row {
+- (void)updateSquare:(jint)column withRow:(jint)row {
   int index = row * 8 + column;
   [[self.subviews objectAtIndex:index] update];
 }

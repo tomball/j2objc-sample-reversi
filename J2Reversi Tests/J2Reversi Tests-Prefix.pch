@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'J2Reversi Tests' target in the 'J2Reversi Tests' project
-//
-
-#ifdef __OBJC__
-  #import <Cocoa/Cocoa.h>
-#endif
