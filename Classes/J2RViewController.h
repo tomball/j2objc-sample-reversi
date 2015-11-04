@@ -18,9 +18,7 @@
 #import <UIKit/UIKit.h>
 #import "CommandInterface.h"
 
-@interface J2RViewController : UIViewController {
-  OECommandInterface *_model;
-}
+@interface J2RViewController : UIViewController 
 
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *blackScoreBackground;

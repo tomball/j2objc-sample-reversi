@@ -19,16 +19,7 @@
 #import "CommandInterface.h"
 #import "CommandInterfaceListener.h"
 
-@interface J2RSquare : UIView {
-  jint _column;
-  jint _row;
-  UIImageView* _imageView;
-  UIImage* _blackImage;
-  UIImage* _whiteImage;
-  UIImage* _emptyImage;
-  OECommandInterface *_model;
-  id<OECommandInterfaceListener> _resultListener;
-}
+@interface J2RSquare : UIView
 
 - (id) initWithFrame:(CGRect)frame
               column:(jint)column

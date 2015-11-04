@@ -19,14 +19,24 @@
 #import "J2RViewController.h"
 #import "CommandInterfaceListener.h"
 
-@implementation J2RSquare
+@implementation J2RSquare {
+  jint _column;
+  jint _row;
+  UIImageView *_backgroundImageView;
+  UIImageView* _imageView;
+  UIImage* _blackImage;
+  UIImage* _whiteImage;
+  UIImage* _emptyImage;
+  OECommandInterface *_model;
+  id<OECommandInterfaceListener> _resultListener;
+}
 
 - (id)initWithFrame:(CGRect)frame
              column:(jint)column
                 row:(jint)row
               model:(OECommandInterface *)model
      resultListener:(id<OECommandInterfaceListener>)listener {
-  if (self = [super initWithFrame:frame]) {
+  if ((self = [super initWithFrame:frame])) {
     _column = column;
     _row = row;
     _model = model;
@@ -43,7 +53,10 @@
                                    frame.size.width - (pad * 2), frame.size.height - (pad * 2));
     [self addSubview:_imageView];
 
-    self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tile.png"]];
+    UIImage *tileImage = [UIImage imageNamed:@"tile.png"];
+    if (tileImage != nil) {
+      self.backgroundColor = [UIColor colorWithPatternImage:tileImage];
+    }
     [self update];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
                                              initWithTarget:self action:@selector(cellTapped:)];
@@ -67,12 +80,12 @@
   } else if (state == 1 && _imageView.image != _whiteImage) {
     [UIView transitionWithView:_imageView duration:0.5
                        options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                         _imageView.image = _whiteImage;
+                         self->_imageView.image = self->_whiteImage;
                        } completion:nil];
   } else if (state == 2 && _imageView.image != _blackImage) {
     [UIView transitionWithView:_imageView duration:0.5
                        options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                         _imageView.image = _blackImage;
+                         self->_imageView.image = self->_blackImage;
                        } completion:nil];
   }
 }

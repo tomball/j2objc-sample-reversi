@@ -19,7 +19,9 @@
 #import "J2RSquare.h"
 #import "J2RViewController.h"
 
-@implementation J2RViewController
+@implementation J2RViewController {
+  OECommandInterface *_model;
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];
