@@ -24,7 +24,7 @@
 - (id) initWithFrame:(CGRect)frame
               column:(jint)column
                  row:(jint)row
-               model:(OECommandInterface *)model
-      resultListener:(id<OECommandInterfaceListener>)listener;
+               model:(JOECommandInterface *)model
+      resultListener:(id<JOECommandInterfaceListener>)listener;
 
 @end

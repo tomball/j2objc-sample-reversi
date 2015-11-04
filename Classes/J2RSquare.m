@@ -27,15 +27,15 @@
   UIImage* _blackImage;
   UIImage* _whiteImage;
   UIImage* _emptyImage;
-  OECommandInterface *_model;
-  id<OECommandInterfaceListener> _resultListener;
+  JOECommandInterface *_model;
+  id<JOECommandInterfaceListener> _resultListener;
 }
 
 - (id)initWithFrame:(CGRect)frame
              column:(jint)column
                 row:(jint)row
-              model:(OECommandInterface *)model
-     resultListener:(id<OECommandInterfaceListener>)listener {
+              model:(JOECommandInterface *)model
+     resultListener:(id<JOECommandInterfaceListener>)listener {
   if ((self = [super initWithFrame:frame])) {
     _column = column;
     _row = row;
@@ -98,7 +98,7 @@
   if ([_model MakeMoveIsPossibleWithInt:column withInt:row]) {
     [_model MakeMoveWithInt:column withInt:row];
     [self update];
-    [_model ComputeMoveWithOECommandInterfaceListener:_resultListener];
+    [_model ComputeMoveWithJOECommandInterfaceListener:_resultListener];
   } else {
     NSLog(@"invalid move: %d, %d", row, column);
   }

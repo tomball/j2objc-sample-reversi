@@ -20,7 +20,7 @@
 #import "J2RViewController.h"
 
 @implementation J2RViewController {
-  OECommandInterface *_model;
+  JOECommandInterface *_model;
 }
 
 - (void)viewDidLoad {
@@ -28,7 +28,7 @@
   self.background.image = [UIImage imageNamed:@"reversi.png"];
   self.blackScoreBackground.image = [UIImage imageNamed:@"black-score.png"];
   self.whiteScoreBackground.image = [UIImage imageNamed:@"white-score.png"];
-	_model = [[OECommandInterface alloc] init];
+	_model = [[JOECommandInterface alloc] init];
   float squareSize;
   CGRect bounds;
   if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {

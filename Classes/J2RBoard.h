@@ -20,14 +20,14 @@
 #import "CommandInterfaceListener.h"
 #import "J2RViewController.h"
 
-@interface J2RBoard : UIView <OECommandInterfaceListener>
+@interface J2RBoard : UIView <JOECommandInterfaceListener>
 
 @property (nonatomic, retain) J2RViewController *game;
-@property (nonatomic, retain) OECommandInterface *model;
+@property (nonatomic, retain) JOECommandInterface *model;
 
 - (id)initWithFrame:(CGRect)frame
          squareSize:(float)size
-              model:(OECommandInterface *)model
+              model:(JOECommandInterface *)model
      viewController:(J2RViewController *)game;
 
 - (void)update;

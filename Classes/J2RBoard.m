@@ -26,7 +26,7 @@
 
 - (id)initWithFrame:(CGRect)frame
          squareSize:(float)size
-              model:(OECommandInterface *)model_
+              model:(JOECommandInterface *)model_
      viewController:(J2RViewController *)game_ {
   self = [super initWithFrame:frame];
   if (self) {
@@ -67,13 +67,13 @@
   [[self.subviews objectAtIndex:index] update];
 }
 
-- (void)ComputationFinishedWithOEMove:(OEMove *)move {
+- (void)ComputationFinishedWithJOEMove:(JOEMove *)move {
   [self update];
   if ([move GetPlayer] == [model GetWhoseTurn]) {
     // No player move possible, so tell engine to move again.
     NSLog(@"no move available");
     if ([model ComputeMoveIsPossible]) {
-      [model ComputeMoveWithOECommandInterfaceListener:self];
+      [model ComputeMoveWithJOECommandInterfaceListener:self];
     }
   } else if ([model GetWhoseTurn] == 0) {
     NSLog(@"game over");
