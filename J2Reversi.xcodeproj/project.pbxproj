@@ -32,6 +32,7 @@
 		064E074818E90BD400F5DF6B /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073618E90BD400F5DF6B /* Score.java */; };
 		064E074918E90BD400F5DF6B /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073718E90BD400F5DF6B /* SuperEngine.java */; };
 		0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650A42618DF6AB800C743D6 /* Security.framework */; };
+		066FEF681C10D7E200255438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066FEF661C10D7E200255438 /* LaunchScreen.storyboard */; };
 		0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A30F163DE1C800407C3A /* UIKit.framework */; };
 		0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A311163DE1C800407C3A /* Foundation.framework */; };
 		0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A313163DE1C800407C3A /* CoreGraphics.framework */; };
@@ -86,6 +87,7 @@
 		064E078E18E912B400F5DF6B /* J2Reversi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J2Reversi-Info.plist"; sourceTree = SOURCE_ROOT; };
 		064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		0650A42618DF6AB800C743D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		066FEF671C10D7E200255438 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Classes/en.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		0683A30B163DE1C800407C3A /* J2Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0683A30F163DE1C800407C3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0683A311163DE1C800407C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -224,6 +226,7 @@
 			children = (
 				3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */,
 				3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */,
+				066FEF661C10D7E200255438 /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
 			path = Classes/en.lproj;
@@ -299,6 +302,7 @@
 				064E074718E90BD400F5DF6B /* README in Resources */,
 				064E071318E90A4B00F5DF6B /* black-stone.png in Resources */,
 				064E071718E90A4B00F5DF6B /* reversi@2x.png in Resources */,
+				066FEF681C10D7E200255438 /* LaunchScreen.storyboard in Resources */,
 				064E071218E90A4B00F5DF6B /* black-score.png in Resources */,
 				064E071418E90A4B00F5DF6B /* Default-568h@2x.png in Resources */,
 			);
@@ -336,6 +340,14 @@
 				064E071D18E90BD400F5DF6B /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		066FEF661C10D7E200255438 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				066FEF671C10D7E200255438 /* en */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */ = {
