@@ -68,7 +68,7 @@
 }
 
 - (void)ComputationFinishedWithJOEMove:(JOEMove *)move {
-  [self update];
+  [self performSelectorOnMainThread:@selector(update) withObject:nil waitUntilDone:YES];
   if ([move GetPlayer] == [model GetWhoseTurn]) {
     // No player move possible, so tell engine to move again.
     NSLog(@"no move available");
