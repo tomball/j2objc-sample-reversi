@@ -29,20 +29,31 @@
   self.blackScoreBackground.image = [UIImage imageNamed:@"black-score.png"];
   self.whiteScoreBackground.image = [UIImage imageNamed:@"white-score.png"];
 	_model = [[JOECommandInterface alloc] init];
-  float squareSize;
-  CGRect bounds;
-  if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-    squareSize = 40;
-    bounds = CGRectMake(0, 50, 320, 320);
+  CGRect frame = self.background.frame;
+  CGFloat boardSize;
+  CGRect boardFrame;
+  if (CGRectGetWidth(frame) < CGRectGetHeight(frame)) {
+    boardSize = CGRectGetWidth(frame);
+    CGFloat y = (CGRectGetHeight(frame) - boardSize) / 2;
+    boardFrame = CGRectMake(CGRectGetMinX(frame),
+                             CGRectGetMinY(frame) + y,
+                             boardSize,
+                             boardSize);
   } else {
-    squareSize = 96;
-    bounds = CGRectMake(0, 100, 640, 640);
+    boardSize = CGRectGetHeight(frame);
+    CGFloat x = (CGRectGetWidth(frame) - boardSize) / 2;
+    boardFrame = CGRectMake(CGRectGetMinX(frame) + x,
+                             CGRectGetMinY(frame),
+                             boardSize,
+                             boardSize);
   }
-  J2RBoard *board = [[J2RBoard alloc] initWithFrame:bounds
+  CGFloat squareSize = boardSize / 8;
+  J2RBoard *board = [[J2RBoard alloc] initWithFrame:boardFrame
                                          squareSize:squareSize
                                               model:_model
                                       viewController:self];
   [self.view addSubview:board];
+  [self.background removeFromSuperview];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
