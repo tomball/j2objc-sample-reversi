@@ -12,6 +12,6 @@
 // The path should be written without quotes, when modified use Xcode's Product -> Clean
 J2OBJC_HOME = ${SRCROOT}/../j2objc-dist;
 
-HEADER_SEARCH_PATHS = $(inherited) "${J2OBJC_HOME}/include" "${DERIVED_FILES_DIR}";
-LIBRARY_SEARCH_PATHS = $(inherited) "${J2OBJC_HOME}/lib";
-OTHER_LDFLAGS = $(inherited) -l"z" -l"jre_emul" -l"icucore";
+HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks/JRE.framework/Headers";
+FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+OTHER_LDFLAGS = $(inherited);

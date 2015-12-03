@@ -33,6 +33,7 @@
 		064E074918E90BD400F5DF6B /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073718E90BD400F5DF6B /* SuperEngine.java */; };
 		0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650A42618DF6AB800C743D6 /* Security.framework */; };
 		066FEF681C10D7E200255438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066FEF661C10D7E200255438 /* LaunchScreen.storyboard */; };
+		066FEF6A1C10DE6500255438 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066FEF691C10DE6500255438 /* JRE.framework */; };
 		0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A30F163DE1C800407C3A /* UIKit.framework */; };
 		0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A311163DE1C800407C3A /* Foundation.framework */; };
 		0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A313163DE1C800407C3A /* CoreGraphics.framework */; };
@@ -88,6 +89,7 @@
 		064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		0650A42618DF6AB800C743D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		066FEF671C10D7E200255438 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Classes/en.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		066FEF691C10DE6500255438 /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "${J2OBJC_HOME}/frameworks/JRE.framework"; sourceTree = "<group>"; };
 		0683A30B163DE1C800407C3A /* J2Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0683A30F163DE1C800407C3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0683A311163DE1C800407C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066FEF6A1C10DE6500255438 /* JRE.framework in Frameworks */,
 				0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */,
 				0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */,
 				0683A312163DE1C800407C3A /* Foundation.framework in Frameworks */,
@@ -183,6 +186,7 @@
 		0683A30E163DE1C800407C3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				066FEF691C10DE6500255438 /* JRE.framework */,
 				0650A42618DF6AB800C743D6 /* Security.framework */,
 				0683A30F163DE1C800407C3A /* UIKit.framework */,
 				0683A311163DE1C800407C3A /* Foundation.framework */,
@@ -449,8 +453,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.j2objc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -467,8 +474,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "J2Reversi-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "J2Reversi-Info.plist";
 				INSTALL_OWNER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.j2objc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
