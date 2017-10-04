@@ -30,6 +30,7 @@
 		064E074818E90BD400F5DF6B /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073618E90BD400F5DF6B /* Score.java */; };
 		064E074918E90BD400F5DF6B /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = 064E073718E90BD400F5DF6B /* SuperEngine.java */; };
 		0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0650A42618DF6AB800C743D6 /* Security.framework */; };
+		0659E5A41F846AF300D373F9 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0659E5A31F846AF300D373F9 /* libiconv.tbd */; };
 		066FEF681C10D7E200255438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066FEF661C10D7E200255438 /* LaunchScreen.storyboard */; };
 		066FEF6A1C10DE6500255438 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066FEF691C10DE6500255438 /* JRE.framework */; };
 		0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A30F163DE1C800407C3A /* UIKit.framework */; };
@@ -84,6 +85,7 @@
 		064E078E18E912B400F5DF6B /* J2Reversi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "J2Reversi-Info.plist"; sourceTree = SOURCE_ROOT; };
 		064E078F18E912B400F5DF6B /* J2Reversi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "J2Reversi-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		0650A42618DF6AB800C743D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0659E5A31F846AF300D373F9 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		066FEF671C10D7E200255438 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Classes/en.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		066FEF691C10DE6500255438 /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "${J2OBJC_HOME}/frameworks/JRE.framework"; sourceTree = "<group>"; };
 		0683A30B163DE1C800407C3A /* J2Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0659E5A41F846AF300D373F9 /* libiconv.tbd in Frameworks */,
 				066FEF6A1C10DE6500255438 /* JRE.framework in Frameworks */,
 				0650A42718DF6AB800C743D6 /* Security.framework in Frameworks */,
 				0683A310163DE1C800407C3A /* UIKit.framework in Frameworks */,
@@ -180,6 +183,7 @@
 		0683A30E163DE1C800407C3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0659E5A31F846AF300D373F9 /* libiconv.tbd */,
 				066FEF691C10DE6500255438 /* JRE.framework */,
 				0650A42618DF6AB800C743D6 /* Security.framework */,
 				0683A30F163DE1C800407C3A /* UIKit.framework */,
@@ -259,7 +263,7 @@
 			attributes = {
 				CLASSPREFIX = J2R;
 				LastTestingUpgradeCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Tom Ball";
 				TargetAttributes = {
 					0683A30A163DE1C800407C3A = {
@@ -370,11 +374,19 @@
 			baseConfigurationReference = 064E070718E90A3600F5DF6B /* Settings.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -397,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,11 +421,19 @@
 			baseConfigurationReference = 064E070718E90A3600F5DF6B /* Settings.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -428,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +461,7 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -462,6 +483,7 @@
 			buildSettings = {
 				ALTERNATE_OWNER = "";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
